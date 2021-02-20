@@ -168,7 +168,8 @@ while n <=100:
     cubo = cubo*n
     i += 1
   cubos.append(cubo)
-print(cubos)
+  n+=1
+#print(cubos)
 
 
 
