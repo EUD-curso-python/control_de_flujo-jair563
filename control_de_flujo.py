@@ -51,11 +51,16 @@ separados por coma, así:
 '134,268,...'
 
 """
-tabla100= [134]
-n=134
-while n <=34304:
-  n*=2
-  tabla100.append(n)
+
+rangoT=list(range(1,11))
+multiplos=''
+Control = 0
+tabla100 = ''
+pr= list()
+for Control in (rangoT):
+  multiplos= 134 * Control
+  pr.append(str(multiplos))
+tabla100=",".join(pr)
 #print(tabla100)
 
 
@@ -95,6 +100,22 @@ multiplos3 = len(n1)
   '1'
 ]
 """
+
+l1=list()
+l2= list()
+acumulado=list()
+regresivo50=list()
+n=1
+for i in range(51,0,-1):
+  while n<=i:
+    l1.append(str(n))
+    n=n+1
+  l2=' '.join(l1)
+  acumulado.append(l2)
+acumulado.pop(0)
+regresivo50=acumulado
+regresivo50.reverse()
+print(regresivo50)
 
 
 
@@ -210,7 +231,12 @@ cantidad máxima de asteriscos de 30.
 **
 *
 """
-
+patron=''
+for numero in range(1,31):
+  patron += "*"*(numero) + "\n"
+for numero in range (29,0,-1):
+  patron += "*"*(numero) + "\n"
+patron=patron.strip()
 
 
 
