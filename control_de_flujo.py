@@ -124,7 +124,7 @@ while Maximo > Minimo:
 lista2 = []
 for x in range(1, 70, 5):
     lista2.append(x)
-print(lista2)
+#print(lista2)
 num = len(lista2)
 invertido = []
 num = num -1
@@ -188,7 +188,7 @@ Por ejemplo, el factorial de 5 se calcula así:
 
 factorial = 1
 for x in range(30, 0, -1):
-    print(x)
+    #print(x)
     factorial *= x
 
 
@@ -199,8 +199,11 @@ presentes en posiciones pares, pero solo hasta la posición 80.
 
 lista3 = [941, 149, 672, 208, 99, 562, 749, 947, 251, 750, 889, 596, 836, 742, 512, 19, 674, 142, 272, 773, 859, 598, 898, 930, 119, 107, 798, 447, 348, 402, 33, 678, 460, 144, 168, 290, 929, 254, 233, 563, 48, 249, 890, 871, 484, 265, 831, 694, 366, 499, 271, 123, 870, 986, 449, 894, 347, 346, 519, 969, 242, 57, 985, 250, 490, 93, 999, 373, 355, 466, 416, 937, 214, 707, 834, 126, 698, 268, 217, 406, 334, 285, 429, 130, 393, 396, 936, 572, 688, 765, 404, 970, 159, 98, 545, 412, 629, 361, 70, 602]
 
-
-
+NValores = len(lista3) - 20
+pares = []
+for x in range(2, NValores, 2):
+    pares.append(lista3[x])
+print(pares)
 
 
 
