@@ -101,31 +101,40 @@ multiplos3 = len(n1)
 ]
 """
 
-l1=list()
-l2= list()
-acumulado=list()
-regresivo50=list()
-n=1
-for i in range(51,0,-1):
-  while n<=i:
-    l1.append(str(n))
-    n=n+1
-  l2=' '.join(l1)
-  acumulado.append(l2)
-acumulado.pop(0)
-regresivo50=acumulado
-regresivo50.reverse()
-print(regresivo50)
 
 
-
-
+Maximo = 50
+Minimo = 0
+lista1 = []
+regresivo50 = []
+while Maximo > Minimo:
+    for x in range(Maximo, Minimo, -1):
+        lista1.append(str(x))
+    n = " ".join(lista1)
+    regresivo50.append(n)
+    Maximo -= 1
+    lista1.clear()
+#print(regresivo50)
 
 
 """Invierta la siguiente lista usando el bucle for y guarde el resultado en 
 `invertido` (sin hacer uso de la función `reversed` ni del método `reverse`)
 """
-lista2 = list(range(1, 70, 5))
+
+lista2 = []
+for x in range(1, 70, 5):
+    lista2.append(x)
+print(lista2)
+num = len(lista2)
+invertido = []
+num = num -1
+x = 0
+while num >= x:
+    invertido.append(lista2[num])
+    num -= 1
+#print(invertido)
+
+
 
 
 
@@ -136,7 +145,17 @@ Nota: Un número primo es un número entero que no se puede calcular multiplican
 otros números enteros.
 """
 
-
+primos = []
+nmax = 300
+for x in range(37, nmax):
+    for i in range(2, x):
+        if x%i != 0:
+            continue
+        else:
+            break
+    else:
+       primos.append(x)
+#print(primos)
 
 
 
@@ -149,7 +168,12 @@ del segundo cada uno se calcula sumando los dos anteriores términos de la serie
 
 """
 
-
+fibonacci=[]
+a, b = 0,1
+while a <= 1000000000000:
+    fibonacci.append(a)
+    a, b = b, a+b
+#print(fibonacci)
 
 
 
@@ -162,7 +186,10 @@ Por ejemplo, el factorial de 5 se calcula así:
 5! = 5 × 4 × 3 × 2 × 1 = 120
 """
 
-
+factorial = 1
+for x in range(30, 0, -1):
+    print(x)
+    factorial *= x
 
 
 
